@@ -1,0 +1,41 @@
+{
+    "alpha_vantage": {
+        "key": "4CYFS1B7E13RWW9I",
+        "symbol": "IBM",
+        "outputsize": "full",
+        "key_adjusted_close": "5. adjusted close"
+    },
+    "data": {
+        "window_size": "20",
+        "test_split_size": "7",
+        "validation_split_size": "2"
+    }, 
+    "plots": {
+        "show_plots": "TRUE",
+        "xticks_interval": "90",
+        "color_actual": "#001f3f",
+        "color_train": "#3D9970",
+        "color_val": "#0074D9",
+        "color_pred_train": "#3D9970",
+        "color_pred_val": "#0074D9",
+        "color_pred_test": "#FF4136",
+        "threshold":"0.5"
+    },
+    "sentimientos": {
+        "url": "https://finance.yahoo.com/",
+        "service": "32"
+    },
+    "model": {
+        "num_lstm_layers": "2",
+        "lstm_size": "32",
+        "version":"v1",
+        "dropout": "0.2"
+    },
+    "training": {
+        "device": "cpu",
+        "batch_size": "32",
+        "epochs": "15",
+        "min_learning_rate": "0.001",
+        "max_learning_rate": "0.01"
+    }
+}
